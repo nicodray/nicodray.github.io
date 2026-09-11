@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Dray's research website</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--font-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!--github logo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--script pour MathJax-->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+</style>
+
+<script>
+</script>
+
+<body>
+    <nav id="menu">
+        <ul>
+            <!--<H1 style="margin-left: 10px; color: white;">Menu</H1>-->
+            <br>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#Publications">Publications</a></li>
+            <li><a href="#Past research experiences">Past research</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#teaching">Activities</a></li>
+            <li><a href="#Outreach">Teaching</a></li>
+            
+            <!--<li><a href="#misc">Miscellaneous</a></li>-->
+        </ul>
+    </nav>
+    
+    <!--
+        Burger menu en html/css "display:none;" sur laptop,
+        "display:block" sur téléphone.
+    -->
+
+    <!-- Top Page -->
+    <div class="section">
+        <!-- Header -->
+        <div class="header">
+            <div class="block blockPadding">
+                <div class="headerPhoto">
+                    <div class="photo-container">
+                        <img src="nico.jpg" class="imgExemple">
+                        <a href="https://www.cnrs.fr/fr">
+                            <img src="cnrs.png" class="small-circle top-left">
+                        </a>
+                        <a href="https://research.pasteur.fr/fr/team/zebrafish-neurogenetics/" target="_blank">
+                        <img src="ip.jpg" class="small-circle top-right">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="headerTitle">
+                    <h1>Nicolas Dray</h1>
+                    <h2>CNRS researcher<br>at Institut Pasteur</h2>                  
+                </div>
+                
+                <div class="headerContact">
+                        <!--on donne la même dimension que la largeur de la photo pour avoir le même comportement des deux côtés-->
+                        <!--la photo a deux protubérances de chaque côté (icones) - compense avec +10px (150 de diamètre pour la photo)-->
+                        <div class="textRight">
+                            <p>Paris, France</p>
+                            <a href="mailto: nicolas.dray@pasteur.fr">
+                                Mail
+                            </a><i class="icon fa fa-envelope"></i>
+                            <br>
+                            <a href="https://orcid.org/0000-0002-2632-6004" target="_blank">
+                                Orcid            
+                            </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                            <br>
+                            <a href="https://fr.linkedin.com/in/draynicolas" target="_blank">
+                            Linkedin 
+                            </a><i class="icon fa fa-linkedin"></i>
+                            <br>
+                            <a href="https://scholar.google.com/citations?user=Dxlj_wgAAAAJ&hl=fr&oi=ao" target="_blank">
+                            Google Scholar
+                            </a><i <img src="mini scholar.png" class="orcid-icon"> </i>
+                            
+                            <!--a href="https://www.cnrs.fr/fr"-->
+                        </div>
+                </div>
+            </div>
+            <!--<div class="textCenter">
+                <p>at Laboratoire de Probabilités, Statistique et Modélisation (LPSM),
+                    <br>
+                    Sorbonne Université.
+                </p>
+            </div>-->
+        </div>
+
+        <!-- Header -->
+
+        <!-- Header, SMARTPHONE (ajouter le style au css) -->
+        <div class="responsiveHeader">
+                <div class="block blockPadding" style="display: flex;">
+                    <div class="textLeft" style="width:50%;">
+                        <div class="photo-container">
+                            <img src="nico.jpg" class="imgExemple">
+                            <a href="https://www.cnrs.fr/fr">
+                                <img src="cnrs.png" class="small-circle top-left">
+                            </a>
+                            <a href="https://research.pasteur.fr/fr/team/zebrafish-neurogenetics/" target="_blank">
+                            <img src="ip.jpg" class="small-circle top-right">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="item textRight">
+                        <p>Paris, France</p>
+                        <a href="mailto: nicolas.dray@pasteur.fr">
+                            Mail
+                        </a><i class="icon fa fa-envelope"></i>
+                        <br>
+                        <a href="https://orcid.org/0000-0002-2632-6004" target="_blank">
+                            Orcid            
+                        </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                        <br>
+                        <a href="https://fr.linkedin.com/in/draynicolas" target="blank">
+                            Linkedin 
+                        </a><i class="icon fa fa-linkedin"></i>
+                    </div>
+                </div>
+
+            <div class="textCenter">
+                <h1>Nicolas Dray</h1>
+                <h2>CNRS researcher<br>at Institut Pasteur</h2>
+                <!--<p>
+                   at Laboratoire de Probabilités, Statistique et Modélisation (LPSM),
+                   <br>
+                   Sorbonne Université.
+                </p>-->
+            </div>
+        </div>
+        <!-- header, SMARTPHONE -->
+
+        <!-- Module DE BIO : full text + séparators -->
+        <div id="bio">  
+            <div class="block blockPadding textJustify">
+                <div class="bio">
+                <!--p class="subTitle">About me</p-->
+                <h3 class="title">About me</h3>
+
+                    <div class="titleSeparator"></div>
+                    <!--div class="titleSeparator titleSeparator"></div-->
+                
+                    <p>
+                    I am a CNRS researcher currently working on understanding the fundamental mechanisms governing neural stem cell populational dynamics.
+                    <br><br>
+                    I lead projects in the team of <a href="https://research.pasteur.fr/en/team/zebrafish-neurogenetics/" target="_blank">Zebrafish neurogenetics team (headed by Laure Bally-Cuif)</a>, investigating the mechanisms that regulate the spatiotemporal dynamics of adult neural stem cells in the telencephalon. 
+                    <br>
+                    My research combines experimental and quantitative approaches. 
+                    I collaborate with mathematicians (<a href="https://fcheysson.github.io/" target="_blank">Felix Cheysson</a>, <a href="https://eliasventre.github.io/" target="_blank">Elias Ventre</a>, <a href="https://migmtz.github.io/" target="_blank">Miguel Martinez-Herrera</a>), 
+                    physicists (<a href="https://lob.ip-paris.fr/en/emmanuel-beaurepaire" target="_blank">Emmanuel Beaurepaire</a>, <a href="https://research.pasteur.fr/en/member/marcos-wappner-boccaccio/" target="_blank">Marcos Wappner-Boccaccio</a>), and computational scientists (<a href="https://research.pasteur.fr/en/member/gaelle-letort/" target="_blank">Gaelle Letort</a>) 
+                    to develop and apply cutting-edge tools, including multiphoton imaging, advanced image-analysis pipelines, multiplexed imaging, spatial statistics, and mathematical modeling.
+                    <br><br>
+                    I was initially trained in oceanography and biochemistry. During my PhD, I moved into the field of evolutionary developmental biology (evo-devo), before pursuing postdoctoral research on zebrafish development at Yale University.
+                    <br><br>
+                </ul>
+                Beyond research, I am passionate about microscopy and connections between science and art (partnerships with art and design schools and artists), committed to public engagement and scientific outreach (through activities in schools, penitentiary institutions, community organizations, media libraries…), involved in the scientific community such Comité National du CNRS and various committees at Institut Pasteur.    
+            </p>
+            </div>
+            </div>
+        </div>
+
+
+
+        <!-- greyZone : la marge de la page n'est pas prise en compte.
+        idée : la marge est propre à chaque bloc, meilleur responsive ?-->
+        <!-- Module DE LA PAGE-->
+
+        <div id="Publications">                
+            <div class="block blockPadding greyZone">
+                <div class="item">
+                <h2 class="title">Publications</h2>
+                    <div class="titleSeparator"></div>
+                    <!--p class="subTitle">Preprints</p-->
+                    <!--p class="subTitle">Peer reviewed articles</p-->
+                    <br>
+                    <ul>
+                    <li>
+                        <b>Jagged-mediated lateral induction patterns Notch3 signaling within adult neural stem cell populations</b>
+                        <br>S. Ortica, M. Martinez Herrera, L. Degroux, B. Rochette, N. Dray, L. Bally-Cuif
+                        <br>
+                        <i>Nature Communications 17, 3986 </i>, (2026)
+                        <br>
+                        <button class="btn3" onclick="toggleAbstract('abstract22')">Abstract</button>
+                        <a href="https://doi.org/10.1038/s41467-026-70478-0" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract22" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                In the adult brain, Notch3 signaling promotes neural stem cell (NSC) quiescence and stemness.
+                                It remains unknown how Notch3 signaling levels are controlled and relate to these NSC decisions.
+                                Here we directly measure the nuclear translocation of the Notch3 intracellular fragment (N3ICD)
+                                and quantify Notch3 signaling in NSCs of the zebrafish adult telencephalon in situ.
+                                We report that Notch3 signaling levels match NSC quiescence and stemness levels.
+                                In physical space, Notch3 signaling is patterned and high signaling levels surround N3ICDlow cells,
+                                which also express the deltaA (dla) ligand. Another ligand, jagged1b (jag1b), expressed in all NSCs,
+                                positively interacts with Notch3 and sustains expression of the stemness factor Sox2.
+                                Finally, lowering jag1b preserves the structured distribution of Notch3 signaling levels in space
+                                but attenuates their variance. We propose that Notch3 signaling integrates Dla-mediated lateral
+                                inhibition and Jag1b-mediated lateral induction to control quiescence and stemness and their
+                                spatiotemporal dynamics in adult NSCs.
+                                <br><br>
+                                Keywords: Adult neural stem cells, Notch3, Jagged, pallium, zebrafish, intrinsic niche, spatial point process.
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+                    
+                    <ul>
+                    <li>
+                        <b>EpiCure (Epithelial Curation): a versatile and handy tool for curation of epithelial segmentation</b>
+                        <br>G. Letort, L. Valon, A. Michaut, T. Cumming, L. Xénard, M.S. Phan, N. Dray, C.T. Rueden, F. Schweisguth, J. Gros, L. Bally-Cuif, J.Y. Tinevez, R. Levayer
+                        <br> <i>Development</i>, 153(17) (2026)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract24')">Abstract</button>
+                        <a href="https://doi.org/10.1242/dev.205701" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract24" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                Despite advances in deep-learning and bioimage analysis, manual curation of segmented and tracking data is still required to extract accurate quantitative single cell temporal information 
+                                from large tissue/embryo movies. However, very few tools address specifically this challenge. We present here EpiCure (Epithelial Curation), a versatile tool designed to streamline and accelerate 
+                                manual curation of segmentation and tracking in 2D movies of large epithelial tissues. EpiCure uses temporal information and morphometric parameters to automatically identify segmentation and tracking 
+                                errors and provides user-friendly tools to correct them. It focuses on ergonomics and offers visualization options to help navigate movies covering a large number of cells, speeding up the detection and curation of errors. EpiCure is highly interoperable, supports input from diverse segmentation tools and includes multiple export filters enabling seamless integration with downstream analysis pipelines. Using movies from several animal models, we highlight the importance of curating cell segmentation and tracking for accurate downstream analysis, and how EpiCure helps by extracting single cell dynamics and detecting cellular events in a large dataset.
+                                <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+                    
+                    <ul>
+                    <li>
+                        <b>FishFeats: streamlined quantification of multimodal labeling at the single-cell level in 3D tissues</b>
+                        <br> G. Letort, T. Foley, I. Mignerey, L. Bally-Cuif, N. Dray
+                        <br> <i>Bioinformatics</i>, vol 42 btag105 (2025)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract23')">Abstract</button>
+                        <a href="https://doi.org/10.1093/bioinformatics/btag105" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <a href="https://gletort.github.io/FishFeats/" target="_blank" class="btn3" role="button">Github</a>
+                        <div id="abstract23" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                Characterizing the distribution of biological marker expression at the single cell level in whole tissues requires diverse image analysis steps, such as segmentation 
+                                of cells and nuclei, detection of RNA transcripts (or other staining), or their mapping (e.g. assigning nuclei/RNA dots to their corresponding cell). Several software 
+                                programs or algorithms have been developed for each step independently but integrating them into a comprehensive pipeline for the quantification of individual cells from 
+                                3D imaging samples remains a significant challenge. We developed FishFeats, an open-source and flexible napari plugin, to perform all these steps together within the same framework, taking advantage of available and efficient software applications. The primary core of our pipeline is to propose a user-friendly tool for users who do not have a computational background. FishFeats streamlines extracting quantitative information from multimodal 3D fluorescent microscopy images (smFISH expression in individual cells, immunohistochemical staining, cell morphologies, cell classification) to a unified “cell-by-cell” table for downstream analysis, without requiring any coding. Our second focus is to propose and ease manual correction of each step to further improve accuracy, which can be critical for many biological studies.                                
+                                <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Non-apoptotic caspase events and Atf3 expression underlie direct neuronal differentiation of adult neural stem cells</b> 
+                        <br> F. Rosa, N. Dray, S. Bedu, L. Bally-Cuif
+                        <br> <i>Development</i>, 151(22) (2024)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract21')">Abstract</button>
+                        <a href="https://doi.org/10.1242/dev.204381" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract21" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                Neural stem cells (NSCs) generate neurons over a lifetime in adult vertebrate brains. In the adult zebrafish pallium, NSCs persist long term through balanced fate decisions. These decisions include direct neuronal conversions, i.e. delamination and neurogenesis without a division. To characterize this process, we reanalyze intravital imaging data of adult pallial NSCs, and observe shared delamination dynamics between NSCs and committed neuronal progenitors. Searching for mechanisms predicting direct NSC conversions, we build an NSC-specific genetic tracer of Caspase3/7 activation (Cas3*/Cas7*) in vivo. We show that non-apoptotic Cas3*/7* events occur in adult NSCs and are biased towards lineage termination under physiological conditions, with a predominant generation of single neurons. We further identify the transcription factor Atf3 as necessary for this bias. Finally, we show that the Cas3*/7* pathway is engaged by NSCs upon parenchymal lesion and correlates with NSCs more prone to lineage termination and neuron formation. These results provide evidence for non-apoptotic caspase events occurring in vertebrate adult NSCs and link these events with the NSC fate decision of direct conversion, which is important for long-term NSC population homeostasis.
+                                <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Apical size and deltaA expression predict adult neural stem cell decisions along lineage progression</b>
+                        <br>L. Mancini, B. Guirao, S. Ortica, M. Labusch, F. Cheysson, V. Bonnet, M.S. Phan, S. Herbert, P. Mahou, E. Menant, S. Bedu, C. Baroud, E. Beaurepaire, Y. Bellaiche, L. Bally-Cuif, N. Dray
+                        <br> <i>Science Advances</i>, 9, eadg7519 (2023)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract20')">Abstract</button>
+                        <a href="https://www.science.org/doi/10.1126/sciadv.adg7519" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract20" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                The maintenance of neural stem cells (NSCs) in the adult brain depends on their activation frequency and division mode. Using long-term intravital imaging of NSCs in the zebrafish adult telencephalon, we reveal that apical surface area and expression of the Notch ligand DeltaA predict these NSC decisions. <i>deltaA-negative</i> NSCs constitute a bona fide self-renewing NSC pool and systematically engage in asymmetric divisions generating a self-renewing deltaA<sup>neg</sup> daughter, which regains the size and behavior of its mother, and a neurogenic deltaA<sup>pos</sup> daughter, eventually engaged in neuronal production following further quiescence-division phases. Pharmacological and genetic manipulations of Notch, DeltaA, and apical size further show that the prediction of activation frequency by apical size and the asymmetric divisions of deltaA<sup>neg</sup> NSCs are functionally independent of Notch. These results provide dynamic qualitative and quantitative readouts of NSC lineage progression in vivo and support a hierarchical organization of NSCs in differently fated subpopulations.
+                                <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Label-free imaging of red blood cells and oxygenation with color third-order sum-frequency generation microscopy</b>
+                        <br>J. Ferrer Ortas, P. Mahou, S. Escot, C. Stringari, N. David, L. Bally-Cuif, N. Dray, M. Négrerie, W. Supatto, E. Beaurepaire
+                        <br> <i>Light: Science & Applications</i>, 12, 29 (2023)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract19')">Abstract</button>
+                        <a href="https://doi.org/10.1038/s41377-022-01064-4" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract19" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                Mapping red blood cells (RBCs) flow and oxygenation is of key importance for analyzing brain and tissue physiology. Current microscopy methods are limited either in sensitivity or in spatio-temporal resolution. In this work, we introduce a novel approach based on label-free third-order sum-frequency generation (TSFG) and third-harmonic generation (THG) contrasts. First, we propose a novel experimental scheme for color TSFG microscopy, which provides simultaneous measurements at several wavelengths encompassing the Soret absorption band of hemoglobin. We show that there is a strong three-photon (3P) resonance related to the Soret band of hemoglobin in THG and TSFG signals from zebrafish and human RBCs, and that this resonance is sensitive to RBC oxygenation state. We demonstrate that our color TSFG implementation enables specific detection of flowing RBCs in zebrafish embryos and is sensitive to RBC oxygenation dynamics with single-cell resolution and microsecond pixel times. Moreover, it can be implemented on a 3P microscope and provides label-free RBC-specific contrast at depths exceeding 600 µm in live adult zebrafish brain. Our results establish a new multiphoton contrast extending the palette of deep-tissue microscopy.
+                                <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Anti-diarrheal drug loperamide induces dysbiosis in zebrafish microbiota via bacterial inhibition</b>
+                        <br> R.J. Stevick, B. Audrain, S. Bedu, N. Dray, J.M. Ghigo, D. Pérez-Pascual
+                        <br> <i>Microbiome</i>, 11, 252 (2023)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract18')">Abstract</button>
+                        <a href="https://doi.org/10.1186/s40168-023-01690-z" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract18" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                <b>Background.</b> Perturbations of animal-associated microbiomes from chemical stress can affect host physiology and health. While dysbiosis induced by antibiotic treatments and disease is well known, chemical, nonantibiotic drugs have recently been shown to induce changes in microbiome composition, warranting further exploration. Loperamide is an opioid-receptor agonist widely prescribed for treating acute diarrhea in humans. Loperamide is also used as a tool to study the impact of bowel dysfunction in animal models by inducing constipation, but its effect on host-associated microbiota is poorly characterized.
+                                <br> <b>Results.</b> We used conventional and gnotobiotic larval zebrafish models to show that in addition to host-specific effects, loperamide also has anti-bacterial activities that directly induce changes in microbiota diversity. This dysbiosis is due to changes in bacterial colonization, since gnotobiotic zebrafish mono-colonized with bacterial strains sensitive to loperamide are colonized up to 100-fold lower when treated with loperamide. Consistently, the bacterial diversity of gnotobiotic zebrafish colonized by a mix of 5 representative bacterial strains is affected by loperamide treatment.
+                                <br> <b>Conclusion.</b> Our results demonstrate that loperamide, in addition to host effects, also induces dysbiosis in a vertebrate model, highlighting that established treatments can have underlooked secondary effects on microbiota structure and function. This study further provides insights for future studies exploring how common medications directly induce changes in host-associated microbiota.
+                                <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Dynamic spatiotemporal coordination of neural stem cell fate decisions occurs through local feedback in the adult vertebrate brain</b>
+                        <br>N. Dray, L. Mancini, U. Binshtok, F. Cheysson, W. Supatto, P. Mahou, S. Bedu, S. Ortica, E. Than-Trong, M. Krecsmarik, S. Herbert, J.B. Masson, J.Y. Tinevez, G. Lang, E. Beaurepaire, D. Sprinzak, L. Bally-Cuif
+                        <br><i>Cell Stem Cell</i>, 28(8), 1457-1472 (2021)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract17')">Abstract</button>
+                        <a href="https://doi.org/10.1016/j.stem.2021.03.014" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract17" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Neural stem cell (NSC) populations persist in the adult vertebrate brain over a lifetime, and their homeostasis is controlled at the population level through unknown mechanisms. Here, we combine dynamic imaging of entire NSC populations in their in vivo niche over several weeks with pharmacological manipulations, mathematical modeling, and spatial statistics and demonstrate that NSCs use spatiotemporally resolved local feedback signals to coordinate their decision to divide in adult zebrafish brains. These involve Notch-mediated short-range inhibition from transient neural progenitors and a dispersion effect from the dividing NSCs themselves exerted with a delay of 9–12 days. Simulations from a stochastic NSC lattice model capturing these interactions demonstrate that these signals are linked by lineage progression and control the spatiotemporal distribution of output neurons. These results highlight how local and temporally delayed interactions occurring between brain germinal cells generate self-propagating dynamics that maintain NSC population homeostasis and coordinate specific spatiotemporal correlations.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+
+                    <ul>
+                    <li>
+                        <b>LocalZProjector and DeProj: a toolbox for local 2D projection and accurate morphometrics of large 3D microscopy images</b>
+                        <br>S. Herbert, L. Valon, L. Mancini, N. Dray, P. Caldarelli, J. Gros, E. Esposito, S. Shorte, L. Bally-Cuif, R. Levayer, N. Aulner, J.Y. Tinevez
+                        <br> <i>BMC Biology</i>, 19(1) (2021)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract16')">Abstract</button>
+                        <a href="https://doi.org/10.1186/s12915-021-01037-w" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract16" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            <b>Background.</b> Quantitative imaging of epithelial tissues requires bioimage analysis tools that are widely applicable and accurate. In the case of imaging 3D tissues, a common preprocessing step consists of projecting the acquired 3D volume on a 2D plane mapping the tissue surface. While segmenting the tissue cells is amenable on 2D projections, it is still very difficult and cumbersome in 3D. However, for many specimen and models used in developmental and cell biology, the complex content of the image volume surrounding the epithelium in a tissue often reduces the visibility of the biological object in the projection, compromising its subsequent analysis. In addition, the projection may distort the geometry of the tissue and can lead to strong artifacts in the morphology measurement.
+                            <br><b>Results.</b> Here we introduce a user-friendly toolbox built to robustly project epithelia on their 2D surface from 3D volumes and to produce accurate morphology measurement corrected for the projection distortion, even for very curved tissues. Our toolbox is built upon two components. LocalZProjector is a configurable Fiji plugin that generates 2D projections and height-maps from potentially large 3D stacks (larger than 40 GB per time-point) by only incorporating signal of the planes with local highest variance/mean intensity, despite a possibly complex image content. DeProj is a MATLAB tool that generates correct morphology measurements by combining the height-map output (such as the one offered by LocalZProjector) and the results of a cell segmentation on the 2D projection, hence effectively deprojecting the 2D segmentation in 3D. In this paper, we demonstrate their effectiveness over a wide range of different biological samples. We then compare its performance and accuracy against similar existing tools.
+                            <br><b>Conclusions.</b> We find that LocalZProjector performs well even in situations where the volume to project also contains unwanted signal in other layers. We show that it can process large images without a pre-processing step. We study the impact of geometrical distortions on morphological measurements induced by the projection. We measured very large distortions which are then corrected by DeProj, providing accurate outputs.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+
+                    <ul>
+                    <li>
+                        <b>Modeling nonlinear microscopy near index-mismatched interfaces</b>
+                        <br>J. Morizet, G. Sartorello, N. Dray, C. Stringari, E. Beaurepaire, N. Olivier
+                        <br> <i>Optica</i>, 8, 944-951 (2021)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract15')">Abstract</button>
+                        <a href="https://doi.org/10.1364/OPTICA.421257" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract15" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Nonlinear microscopy is widely used to characterize thick, optically heterogeneous biological samples. While quantitative image analysis requires accurately describing the contrast mechanisms at play, the majority of established numerical models neglect the influence of field distortion caused by sample heterogeneity near focus. In this work, we show experimentally and numerically that finite-difference time-domain (FDTD) methods are applicable to model focused fields interactions in the presence of heterogeneities, typical of nonlinear microscopy. We analyze the ubiquitous geometry of a vertical interface between index-mismatched media (water, glass, and lipids) and consider the cases of two-photon-excited fluorescence (2PEF), third-harmonic generation (THG) and polarized THG contrasts. We show that FDTD simulations can accurately reproduce experimental images obtained on model samples and in live adult zebrafish, in contrast with previous models neglecting field distortions caused by index mismatch at the micrometer scale. Accounting for these effects appears to be particularly critical when interpreting coherent and polarization-resolved microscopy data.
+                             <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+                           
+
+                    <ul>
+                    <li>
+                        <b>Neural stem cell pools homeostasis in the vertebrate adult brain: cell-autonomous decisions or community rules?</b>
+                        <br>N. Dray, E. Than-Trong, L. Bally-Cuif
+                        <br> <i>BioEssays</i> (review), 9:e2000228 (2021)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract14')">Abstract</button>
+                        <a href="https://doi.org/10.1002%2Fbies.202000228" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract14" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Adult stem cell populations must coordinate their own maintenance with the generation of differentiated cell types to sustain organ physiology, in a spatially controlled manner and over long periods. Quantitative analyses of clonal dynamics have revealed that, in epithelia, homeostasis is achieved at the population rather than at the single stem cell level, suggesting that feedback mechanisms coordinate stem cell maintenance and progeny generation. In the central nervous system, however, little is known of the possible community processes underlying neural stem cell maintenance. Recent work, in part based on intravital imaging made possible in the adult zebrafish, conclusively highlights that homeostasis in neural stem cell pools may rely on population asymmetry and long-term spatiotemporal coordination of neural stem cell states and fates. These results suggest that neural stem cell assemblies in the vertebrate brain behave as self-organized systems, such that the stem cells themselves generate their own intrinsic niche.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+
+                    <ul>
+                    <li>
+                        <b>Lineage hierarchies and stochasticity ensure the long-term maintenance of adult neural stem cells</b>
+                        <br>E. Than-Trong, B. Kiani, N. Dray, S. Ortica, B. Simons, S. Rulands, A. Alunni, L. Bally-Cuif
+                        <br> <i>Science Advances</i>, 6:eaaz5424 (2020)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract13')">Abstract</button>
+                        <a href="https://doi.org/10.1126/sciadv.aaz5424" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract13" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            The cellular basis and extent of neural stem cell (NSC) self-renewal in adult vertebrates, and their heterogeneity, remain controversial. To explore the functional behavior and dynamics of individual NSCs, we combined genetic lineage tracing, quantitative clonal analysis, intravital imaging, and global population assessments in the adult zebrafish telencephalon. Our results are compatible with a model where adult neurogenesis is organized in a hierarchy in which a subpopulation of deeply quiescent reservoir NSCs with long-term self-renewal potential generate, through asymmetric divisions, a pool of operational NSCs activating more frequently and taking stochastic fates biased toward neuronal differentiation. Our data further suggest the existence of an additional, upstream, progenitor population that supports the continuous generation of new reservoir NSCs, thus contributing to their overall expansion. Hence, we propose that the dynamics of vertebrate neurogenesis relies on a hierarchical organization where growth, self-renewal, and neurogenic functions are segregated between different NSC types.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+
+                    <ul>
+                    <li>
+                        <b>Lensless microscopy platform for single cell and tissue visualization</b>
+                        <br>R. Corman, W. Boutu, A. Campalans, P. Radicella, J. Duarte, M. Kholodtsova, L. Bally-Cuif, N. Dray, F. Harms, G. Dovillaire, S. Bucourt, H. Merdji
+                        <br> <i>Biomedical Optics Express</i>, 11(5), 2806-2817 (2020)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract12')">Abstract</button>
+                        <a href="https://doi.org/10.1364/BOE.380193" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract12" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Today, 3D imaging techniques are emerging, not only as a new tool in early drug discovery but also for the development of potential therapeutics to treat disease. Particular efforts are directed towards in vivo physiology to avoid perturbing the system under study. Here, we assess non-invasive 3D lensless imaging and its impact on cell behavior and analysis. We test our concept on various bio-applications and present here the first results. The microscopy platform based on in-holography provides large fields of view images (several mm2 compared to several hundred µm2) with sub-micrometer spatial resolution. 3D image reconstructions are achieved using back propagation functions post-processing.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+
+                    <ul>
+                    <li>
+                        <b>Organization of Embryonic Morphogenesis via Mechanical Information</b>
+                        <br>D. Das, D. Jülich, J. Schwendinger-Schreck, E. Guillon, A.K. Lawton, N. Dray, T. Emonet, C.S. O'Hern, M.D. Shattuck, S.A. Holley
+                        <br> <i>Developmental Cell</i>, 49, 829-839 (2019)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract11')">Abstract</button>
+                        <a href="https://doi.org/10.1016/j.devcel.2019.05.014" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract11" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Embryonic organizers establish gradients of diffusible signaling molecules to pattern the surrounding cells. Here, we elucidate an additional mechanism of embryonic organizers that is a secondary consequence of morphogen signaling. Using pharmacological and localized transgenic perturbations, 4D imaging of the zebrafish embryo, systematic analysis of cell motion, and computational modeling, we find that the vertebrate tail organizer orchestrates morphogenesis over distances beyond the range of morphogen signaling. The organizer regulates the rate and coherence of cell motion in the elongating embryo using mechanical information that is transmitted via relay between neighboring cells. This mechanism is similar to a pressure front in granular media and other jammed systems, but in the embryo the mechanical information emerges from self-propelled cell movement and not force transfer between cells. The propagation likely relies upon local biochemical signaling that affects cell contractility, cell adhesion, and/or cell polarity but is independent of transcription and translation.
+                            <br><br>
+                            </p>
+                        </div>               
+                    </li>
+                    </ul>
+                    
+                    <ul>
+                    <li>
+                        <b>Dual-color deep-tissue three-photon microscopy with a multiband infrared laser</b>
+                        <br>K. Guesmi, L. Abdeladim, S. Tozer, P. Mahou, T. Kumamoto, K. Jurkus, P. Rigaud, K. Loulier, N. Dray, P. Georges, M. Hann, J. Livet, W. Supatto, E. Beaurepaire, F. Druon
+                        <br> <i>Light: Science & Applications</i>, 7(1), 1-9 (2018)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract10')">Abstract</button>
+                        <a href="https://doi.org/10.1038/s41377-018-0012-2" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract10" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Multiphoton microscopy combined with genetically encoded fluorescent indicators is a central tool in biology. Three-photon (3P) microscopy with excitation in the short-wavelength infrared (SWIR) water transparency bands at 1.3 and 1.7 µm opens up new opportunities for deep-tissue imaging. However, novel strategies are needed to enable in-depth multicolor fluorescence imaging and fully develop such an imaging approach. Here, we report on a novel multiband SWIR source that simultaneously emits ultrashort pulses at 1.3 and 1.7 µm that has characteristics optimized for 3P microscopy: sub-70 fs duration, 1.25 MHz repetition rate, and µJ-range pulse energy. In turn, we achieve simultaneous 3P excitation of green fluorescent protein (GFP) and red fluorescent proteins (mRFP, mCherry, tdTomato) along with third-harmonic generation. We demonstrate in-depth dual-color 3P imaging in a fixed mouse brain, chick embryo spinal cord, and live adult zebrafish brain, with an improved signal-to-background ratio compared to multicolor two-photon imaging. This development opens the way towards multiparametric imaging deep within scattering tissues.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Life-Long Neurogenic Activity of Individual Neural Stem Cells and Continuous Growth Establish an Outside-In Architecture in the Teleost Pallium</b>
+                        <br>G. Furlan, V. Cuccioli, N. Vuillemin, L. Dirian, A.J. Muntasell, M. Coolen, N. Dray, S. Bedu, C. Houart, E. Beaurepaire, I. Foucher, L. Bally-Cuif
+                        <br> <i>Current Biology</i>, 27, 3288-3301 (2017)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract9')">Abstract</button>
+                        <a href="https://doi.org/10.1016/j.cub.2017.09.052" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract9" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Spatiotemporal variations of neurogenesis are thought to account for the evolution of brain shape. In the dorsal telencephalon (pallium) of vertebrates, it remains unresolved which ancestral neurogenesis mode prefigures the highly divergent cytoarchitectures that are seen in extant species. To gain insight into this question, we developed genetic tools to generate here the first 4-dimensional (3D + birthdating time) map of pallium construction in the adult teleost zebrafish. Using a Tet-On-based genetic birthdating strategy, we identify a “sequential stacking” construction mode where neurons derived from the zebrafish pallial germinal zone arrange in outside-in, age-related layers from a central core generated during embryogenesis. We obtained no evidence for overt radial or tangential neuronal migrations. Cre-lox-mediated tracing, which included following Brainbow clones, further demonstrates that this process is sustained by the persistent neurogenic activity of individual pallial neural stem cells (NSCs) from embryo to adult. Together, these data demonstrate that the spatiotemporal control of NSC activity is an important driver of the macroarchitecture of the zebrafish adult pallium. This simple mode of pallium construction shares distinct traits with pallial genesis in mammals and non-mammalian amniotes such as birds or reptiles, suggesting that it may exemplify the basal layout from which vertebrate pallial architectures were elaborated.
+                            <br><br>
+                            </p>
+                        </div>
+                    </ul>
+                    </li>
+
+                    <ul>
+                    <li>
+                        <b>Large-scale live imaging of adult neural stem cells in their endogenous niche</b>
+                        <br>N. Dray, S. Bedu, N. Vuillemin, A. Alunni, M. Coolen, M. Krecsmarik, W. Supatto, E. Beaurepaire, L. Bally-Cuif
+                        <br> <i>Development</i>, 142, 3592-600 (2015)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract8')">Abstract</button>
+                        <a href="https://doi.org/10.1242/dev.123018" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract8" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Live imaging of adult neural stem cells (aNSCs) in vivo is a technical challenge in the vertebrate brain. Here, we achieve long-term imaging of the adult zebrafish telencephalic neurogenic niche and track a population of >1000 aNSCs over weeks, by taking advantage of fish transparency at near-infrared wavelengths and of intrinsic multiphoton landmarks. This methodology enables us to describe the frequency, distribution and modes of aNSCs divisions across the entire germinal zone of the adult pallium, and to highlight regional differences in these parameters
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>A metameric origin for the annelid pygidium ?</b>
+                        <br>V.V. Starunov, N. Dray, E.V. Belikova, P. Kerner, M. Vervoort, G. Balavoine.
+                        <br> <i>BMC Evolutionary Biology</i>, 15(1), 1-17 (2015)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract7')">Abstract</button>
+                        <a href="https://doi.org/10.1186/s12862-015-0299-z" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract7" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            <b>Background.</b> Segmented body organizations are widely represented in the animal kingdom. Whether the last common bilaterian ancestor was already segmented is intensely debated. Annelids display broad morphological diversity but many species are among the most homonomous metameric animals. The front end (prostomium) and tail piece (pygidium) of annelids are classically described as non-segmental. However, the pygidium structure and development remain poorly studied.
+                            <br><b>Results.</b> Using different methods of microscopy, immunolabelling and a number of molecular markers, we describe the neural and mesodermal structures of the pygidium of Platynereis dumerilii. We establish that the pygidium possesses a complicated nervous system with a nerve ring and a pair of sensory ganglia, a complex intrinsic musculature, a large terminal circular blood sinus and an unusual unpaired torus-shaped coelomic cavity. We also describe some earlier steps of pygidial development and pygidial structure of mature animals after epitokous transformation.
+                            <br><b>Conclusions.</b> We describe a much more complex organization of the pygidium of P. dumerilii than previously suggested. Many of the characteristics are strikingly similar to those found in the trunk segments, opening the debate on whether the pygidium and trunk segments derive from the same ancestral metameric unit. We analyze these scenarios in the context of two classical theories on the origin of segmentation: the cyclomeric/archicoelomate concept and the colonial theory. Both theories provide possible explanations for the partial or complete homology of trunk segments and pygidium.
+                            <br><br>
+                            </p>      
+                        </div>           
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Cell-Fibronectin Interactions Propel Vertebrate Trunk Elongation via Tissue Mechanics</b>
+                        <br>N. Dray, A. Lawton, A. Nandi, D. Jülich, T. Emonet, S.A. Holley
+                        <br> <i>Current Biology</i>, 23(14), 1335-1341 (2013)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract6')">Abstract</button>
+                        <a href="https://doi.org/10.1016/j.cub.2013.05.052" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract6" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            During embryonic development and tissue homeostasis, cells produce and remodel the extracellular matrix (ECM). The ECM maintains tissue integrity and can serve as a substrate for cell migration. Integrin α5 (Itgα5) and αV (ItgαV) are the α subunits of the integrins most responsible for both cell adhesion to the ECM protein fibronectin (FN) and FN matrix fibrillogenesis [1, 2]. We perform a systems-level analysis of cell motion in the zebrafish tail bud during trunk elongation in the presence and absence of normal cell-FN interactions. Itgα5 and ItgαV have well-described roles in cell migration in vitro. However, we find that concomitant loss of itgα5 and itgαV leads to a trunk elongation defect without substantive alteration of cell migration. Tissue-specific transgenic rescue experiments suggest that the FN matrix on the surface of the paraxial mesoderm is required for body elongation via its role in defining tissue mechanics and intertissue adhesion.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+
+                    <ul>
+                    <li>
+                        <b>Regulated tissue fluidity steers zebrafish body elongation</b>
+                        <br>A.K. Lawton, A. Nandi, M.J. Stulberg, N. Dray, M.W. Sneddon, W. Pontius, T. Emonet, S.A. Holley
+                        <br> <i>Development</i>, 140, 573-82 (2013)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract5')">Abstract</button>
+                        <a href="https://doi.org/10.1242/dev.090381" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract5" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            The tailbud is the posterior leading edge of the growing vertebrate embryo and consists of motile progenitors of the axial skeleton, musculature and spinal cord. We measure the 3D cell flow field of the zebrafish tailbud and identify changes in tissue fluidity revealed by reductions in the coherence of cell motion without alteration of cell velocities. We find a directed posterior flow wherein the polarization between individual cell motion is high, reflecting ordered collective migration. At the posterior tip of the tailbud, this flow makes sharp bilateral turns facilitated by extensive cell mixing due to increased directional variability of individual cell motions. Inhibition of Wnt or Fgf signaling or cadherin 2 function reduces the coherence of the flow but has different consequences for trunk and tail extension. Modeling and additional data analyses suggest that the balance between the coherence and rate of cell flow determines whether body elongation is linear or whether congestion forms within the flow and the body axis becomes contorted.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Hedgehog signaling regulates segment formation in the annelid Platynereis</b>
+                        <br>N. Dray, K. Tessmar-Raible, M. Le Gouar, L. Vibert, F. Christodoulou, K. Schipany, A. Guillou, J. Zantke, H. Snyman, J. Béhague, M. Vervoort, D. Arendt, G. Balavoine
+                        <br> <i>Science</i>, 329, 339-43 (2010)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract4')">Abstract</button>
+                        <a href="https://doi.org/10.1126/science.1188913" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract4" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            Annelids and arthropods share a similar segmented organization of the body whose evolutionary origin remains unclear. The Hedgehog signaling pathway, prominent in arthropod embryonic segment patterning, has not been shown to have a similar function outside arthropods. We show that the ligand Hedgehog, the receptor Patched, and the transcription factor Gli are all expressed in striped patterns before the morphological appearance of segments in the annelid Platynereis dumerilii. Treatments with small molecules antagonistic to Hedgehog signaling disrupt segment formation. Platynereis Hedgehog is not necessary to establish early segment patterns but is required to maintain them. The molecular similarity of segment patterning functions of the Hedgehog pathway in an annelid and in arthropods supports a common origin of segmentation in protostomes.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+                    
+                    <ul>
+                    <li>
+                        <b>Features of the ancestral bilaterian inferred from Platynereis dumerilii ParaHox genes</b>
+                        <br>J.H. Hui, F. Raible, N. Korchagina, N. Dray, S. Samain, G. Magdelenat, C. Jubin, B. Segurens, G. Balavoine, D. Arendt, D.E. Ferrier
+                        <br> <i>BMC Biology</i>, 7, 43 (2009)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract3')">Abstract</button>
+                        <a href="https://doi.org/10.1186/1741-7007-7-43" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract3" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            <b>Background.</b> The ParaHox gene cluster is the evolutionary sister to the Hox cluster. Whilst the role of the Hox cluster in patterning the anterior-posterior axis of bilaterian animals is well established, and the organisation of vertebrate Hox clusters is intimately linked to gene regulation, much less is known about the more recently discovered ParaHox cluster. ParaHox gene clustering, and its relationship to expression, has only been described in deuterostomes. Conventional protostome models (Drosophila melanogaster and Caenorhabditis elegans) are secondarily derived with respect to ParaHox genes, suffering gene loss and cluster break-up.
+                            <br><b>Results.</b> We provide the first evidence for ParaHox gene clustering from a less-derived protostome animal, the annelid Platynereis dumerilii. Clustering of these genes is thus not a sole preserve of the deuterostome lineage within Bilateria. This protostome ParaHox cluster is not entirely intact however, with Pdu-Cdx being on the opposite end of the same chromosome arm from Pdu-Gsx and Pdu-Xlox. From the genomic sequence around the P. dumerilii ParaHox genes the neighbouring genes are identified, compared with other taxa, and the ancestral arrangement deduced.
+                            <br><b>Conclusion.</b> We relate the organisation of the ParaHox genes to their expression, and from comparisons with other taxa hypothesise that a relatively complex pattern of ParaHox gene expression existed in the protostome-deuterostome ancestor, which was secondarily simplified along several invertebrate lineages. Detailed comparisons of the gene content around the ParaHox genes enables the reconstruction of the genome surrounding the ParaHox cluster of the protostome-deuterostome ancestor, which existed over 550 million years ago.                            
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li>
+                        <b>Complementary striped expression patterns of NK homeobox genes during segment formation in the annelid Platynereis</b>
+                        <br>A. Saudemont, N. Dray, B. Hudry, M. Le Gouar, M. Vervoort, G. Balavoine
+                        <br><i>Developmental Biology</i>, 317, 430-43 (2008)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract2')">Abstract</button>
+                        <a href="http://dx.doi.org/10.1016/j.ydbio.2008.02.013" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract2" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            NK genes are related pan-metazoan homeobox genes. In the fruitfly, NK genes are clustered and involved in patterning various mesodermal derivatives during embryogenesis. It was therefore suggested that the NK cluster emerged in evolution as an ancestral mesodermal patterning cluster. To test this hypothesis, we cloned and analysed the expression patterns of the homologues of NK cluster genes Msx, NK4, NK3, Lbx, Tlx, NK1 and NK5 in the marine annelid Platynereis dumerilii, a representative of trochozoans, the third great branch of bilaterian animals alongside deuterostomes and ecdysozoans. We found that most of these genes are involved, as they are in the fly, in the specification of distinct mesodermal derivatives, notably subsets of muscle precursors. The expression of the homologue of NK4/tinman in the pulsatile dorsal vessel of Platynereis strongly supports the hypothesis that the vertebrate heart derived from a dorsal vessel relocated to a ventral position by D/V axis inversion in a chordate ancestor. Additionally and more surprisingly, NK4, Lbx, Msx, Tlx and NK1 orthologues are expressed in complementary sets of stripes in the ectoderm and/or mesoderm of forming segments, suggesting an involvement in the segment formation process. A potentially ancient role of the NK cluster genes in segment formation, unsuspected from vertebrate and fruitfly studies so far, now deserves to be investigated in other bilaterian species, especially non-insect arthropods and onychophorans.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+                    <ul>
+                    <li> 
+                        <b>atonal- and achaete-scute-related genes in the annelid Platynereis dumerilii: insights into the evolution of neural basic-Helix-Loop-Helix genes</b>
+                        <br>E. Simionato, P. Kerner, N. Dray, M. Le Gouar, V. Ledent, D. Arendt, M. Vervoort
+                        <br> <i>BMC Evolutionary Biology</i>, 8, 170 (2008)
+                        <br> <button class="btn3" onclick="toggleAbstract('abstract1')">Abstract</button>
+                        <a href="https://doi.org/10.1186/1471-2148-8-170" target="_blank" class="btn3" role="button">-> Pdf</a>
+                        <div id="abstract1" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                            <b>Background.</b> Functional studies in model organisms, such as vertebrates and Drosophila, have shown that basic Helix-loop-Helix (bHLH) proteins have important roles in different steps of neurogenesis, from the acquisition of neural fate to the differentiation into specific neural cell types. However, these studies highlighted many differences in the expression and function of orthologous bHLH proteins during neural development between vertebrates and Drosophila. To understand how the functions of neural bHLH genes have evolved among bilaterians, we have performed a detailed study of bHLH genes during nervous system development in the polychaete annelid, Platynereis dumerilii, an organism which is evolutionary distant from both Drosophila and vertebrates.
+                            <br><b>Results.</b> We have studied Platynereis orthologs of the most important vertebrate neural bHLH genes, i.e. achaete-scute, neurogenin, atonal, olig, and NeuroD genes, the latter two being genes absent of the Drosophila genome. We observed that all these genes have specific expression patterns during nervous system formation in Platynereis. Our data suggest that in Platynereis, like in vertebrates but unlike Drosophila, (i) neurogenin is the main proneural gene for the formation of the trunk central nervous system, (ii) achaete-scute and olig genes are involved in neural subtype specification in the central nervous system, in particular in the specification of the serotonergic phenotype. In addition, we found that the Platynereis NeuroD gene has a broad and early neuroectodermal expression, which is completely different from the neuronal expression of vertebrate NeuroD genes.
+                            <br><b>Conclusion.</b> Our analysis suggests that the Platynereis bHLH genes have both proneural and neuronal specification functions, in a way more akin to the vertebrate situation than to that of Drosophila. We conclude that these features are ancestral to bilaterians and have been conserved in the vertebrates and annelids lineages, but have diverged in the evolutionary lineage leading to Drosophila.
+                            <br><br>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+
+
+
+                </div>            
+            </div>
+        </div>
+
+
+
+        <div id="Past research experiences">
+            <div class="block blockPadding">
+            <!--div class="block blockPadding greyZone"-->
+                <div class="item">
+                    <h2 class="title">Past research experiences</h2>
+                    <div class="titleSeparator"></div>
+                    <ul>
+                    <li>
+                        <b>2013-2013:</b> Post-doctoral fellow in <a href="https://holleylab.yale.edu/" target="_blank">Scott Holley's lab</a>, <a href="https://www.yale.edu/" target="_blank">Yale University</a>, USA
+                        <br>
+                        <i>Topic: Integrins/Extracellular matrix interactions during morphogenesis in zebrafish</i>
+                    </li>
+                    <li>
+                        <b>2004-2008:</b> PhD in Molecular, Cellular & Developmental Biology (dir. of Guillaume Balavoine), <a href="https://www.universite-paris-saclay.fr/" target="_blank">Université Paris-Saclay</a>
+                        <br>
+                        <i>Topics: Animal Evolution, Evo-Devo, evolution of segmentation, Hedgehog signaling</i> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Education">    
+            <!--div class="block blockPadding"-->
+            <div class="block blockPadding greyZone">
+                <div class="item">
+                    <h2 class="title">Education</h2>
+                    <div class="titleSeparator"></div>
+                    <ul>
+                        <li>
+                        <b>HDR (Habilitation à diriger des recherches)</b>, Université Paris Saclay, France, 2024.
+                        </li>
+                        <li>
+                        <b>Ph.D. in Molecular, Cellular and Developmental Biology</b>, Université Paris Saclay, France, 2008.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="activities">
+                <div class="block blockPadding">
+                <div class="item">
+                    <h2 class="title">(some) Activities</h2>
+                    <div class="titleSeparator"></div>
+                    <!--p class="subTitle">Sorbonne Université</p-->
+                    <ul>
+                        <li>
+                        <b>PhD and HDR Jury member</b>                   
+                        <br>
+                        <li>
+                        <b>5 PhD committes (2 ongoing)</b>                   
+                        <br>
+                        <li>
+                        <b>Outreach:</b> 
+                        <br>  -  co-organizer of a 3-year partnerships between Institut Pasteur and <a href="https://www.ensad.fr/fr" target="_blank">the School of Decorative Arts of Paris (ENSAD)</a>
+                        <br>  -  scientific discussion in a penitentiary (3 times)
+                        <br>  -  speaker at <a href="https://www.iledefrance.fr/aides-et-appels-a-projets/paroles-de-chercheuses-et-chercheurs-pdcc" target="_blank">'Paroles de Chercheuses et de Chercheurs'</a>(Région Île-de-France) 
+                        <br>  -  'Capitain' at <a href="https://www.cerclefser.org/fr/declics/" target="_blank">Declics events in highschools</a>
+                        <br>  -  2-year partnerships with a school of design <a href="https://www.dnmadegraphismesevres.fr/" target="_blank">(DNMADE in Sèvres)</a>
+                        <br>  -  Co-organizer of visits for <a href="https://revelles.org/" target="_blank">Rev'Elles Association</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--div id="activities">    
+            <div class="block blockPadding greyZone">
+                <div class="item">
+                    <h2 class="title">Activities</h2>
+                    <div class="titleSeparator"></div>
+                <ul>
+                    <li>
+                        (2023-2024) Representative of PhD students at graduate school (École Doctorale 386 Paris Centre).
+                    </li>
+                    <li>
+                        (2022-2023) Co-organiser of the PhD students seminar at LPSM.
+                    </li>
+                </ul>
+                </div>
+                <!--<div class="itemRightImage">
+                    <img src="cooldownTimesMarkedMulti.jpg" class="imgRight";style="vertical-align: middle;">
+                    <p class="imgDesc";style="vertical-align: middle;">Restart times for estimation of Hawkes processes with inhibition effects.</p>
+                </div>>
+            </div>
+        </div-->
+
+        <div id="teaching">
+            <div class="block blockPadding greyZone">
+            <!--div class="block blockPadding"-->
+            <div class="item">
+                <h2 class="title">(some) Teaching</h2>
+                <div class="titleSeparator"></div>
+                <!--p class="subTitle">Sorbonne Université</p-->
+                <ul>
+                    <li>
+                        <b>2020, 2022 and 2024:</b> Pasteur Course ‘Principles and Applications of Fluorescence Microscopy'
+                        <br>
+                        <i>Topic: Microscopy (two-photon imaging)</i>
+                    </li>
+                    <li>
+                        <b>since 2016:</b> Master 2 biophysics at Sorbonne University
+                        <br>
+                        <i>Topics: Neurogenesis</i> 
+                    </li>
+                    <li>
+                        <b>2018-202:</b> Pasteur course : Molecular Biology of the cell
+                        <br>
+                        <i>Topics: 2-weeks module on morphogenesis</i>
+                    </li>
+                </ul>
+            </div>
+
+            <!--<div class="itemRightImage">
+                <img src="cooldownTimesMarkedMulti.jpg" class="imgRight";style="vertical-align: middle;">
+                <p class="imgDesc";style="vertical-align: middle;">Restart times for estimation of Hawkes processes with inhibition effects.</p>
+            </div>-->
+        </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="footer">
+            <!--div class="block blockPadding"-->
+            <div class="block blockPadding footerDesktopContent">
+
+                <div class="item textLeft">
+                    <p class="title"><br><br>Nicolas Dray, CNRS researcher</p>
+                    <br><br>
+                </div>
+            
+                <div class="item textRight">
+                    <p class="credits">Original code by 
+                    <a href="https://github.com/Gelero91">
+                        GLR
+                    </a></p>
+                </div>
+                
+
+                <!--div class="item textRight">
+                    <div class="item textRight">
+                    <a href="mailto: nicolas.dray@pasteur.fr">
+                        Mail
+                    </a><i class="icon fa fa-envelope"></i>
+                    <br>
+                    <a href="https://orcid.org/0000-0002-2632-6004">
+                        Orcid            
+                    </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <!--path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                    <br>
+                    <a href="https://fr.linkedin.com/in/draynicolas">
+                        Linkedin 
+                    </a><i class="icon fa fa-linkedin"></i>
+
+                </div>
+            </div>
+        </div-->
+
+        <div class="responsiveFooter">
+            <div class="block blockPadding" style="display: flex;">
+
+                <div class="textLeft" style="width:50%;">
+                    <p class="title"><br><br>Nicolas Dray, CNRS researcher</p>
+                    <br><br>
+                </div>
+            
+                <div class="item textRight" style="width:50%;">
+                    <p class="credits">Original code by 
+                    <a href="https://github.com/Gelero91">
+                        GLR
+                    </a></p>
+                </div>
+            </div>
+
+            
+                <!--div class="item textRight">
+                    <a href="mailto: nicolas.dray@pasteur.fr">
+                        Mail
+                    </a><i class="icon fa fa-envelope"></i>
+                    <br>
+                    <a href="https://orcid.org/0000-0002-2632-6004">
+                        Orcid            
+                    </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <!--path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                    <br>
+                    <a href="https://fr.linkedin.com/in/draynicolas">
+                        Linkedin 
+                    </a><i class="icon fa fa-linkedin"></i>
+                </div-->
+            
+        </div>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menu = document.getElementById('menu');
+    
+        // Ajouter la classe 'collapsed' par défaut
+        menu.classList.add('collapsed');
+    
+        // Optionnel : retirer la classe au clic si besoin pour garder le menu ouvert
+        menu.addEventListener('mouseleave', function() {
+            menu.classList.add('collapsed');
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Sélectionner tous les liens dans le menu
+        const links = document.querySelectorAll('#menu a');
+
+        // Parcourir chaque lien
+        links.forEach(link => {
+            // Ajouter un écouteur d'événement pour le clic
+            link.addEventListener('click', function(event) {
+                // Empêcher le comportement par défaut du lien
+                event.preventDefault();
+
+                // Récupérer l'identifiant de la section cible
+                const targetId = this.getAttribute('href').substring(1);
+
+                // Récupérer la section cible
+                const targetSection = document.getElementById(targetId);
+
+                // Calculer la position de la section cible
+                const targetPosition = targetSection.offsetTop;
+
+                // Animer le défilement jusqu'à la section cible avec une transition douce
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+
+    function toggleAbstract(id) {
+        const abstract = document.getElementById(id);
+        if (abstract.style.display === "none") {
+            abstract.style.display = "block";
+        } else {
+            abstract.style.display = "none";
+        }
+    }
+</script>
